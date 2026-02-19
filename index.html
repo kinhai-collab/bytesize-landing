@@ -72,6 +72,18 @@
             color: #00D4FF;
         }
 
+        .coming-soon-badge {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00D4FF;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
         .cta-button {
             background: #00D4FF;
             color: #0A2540;
@@ -89,6 +101,13 @@
             background: #00B8E6;
             transform: translateY(-2px);
             box-shadow: 0 8px 24px rgba(0, 212, 255, 0.3);
+        }
+
+        .cta-button:disabled {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00D4FF;
+            cursor: not-allowed;
+            border: 1px solid rgba(0, 212, 255, 0.3);
         }
 
         /* Hero Section */
@@ -156,33 +175,6 @@
             border-color: #00D4FF;
             color: #00D4FF;
             background: rgba(0, 212, 255, 0.05);
-        }
-
-        /* Stats */
-        .stats {
-            display: flex;
-            gap: 64px;
-            justify-content: center;
-            margin-top: 80px;
-            flex-wrap: wrap;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: 700;
-            color: #00D4FF;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: #94A3B8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         /* How It Works */
@@ -326,12 +318,8 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .nav-links {
+            .nav-links a {
                 display: none;
-            }
-
-            .stats {
-                gap: 32px;
             }
 
             .steps {
@@ -353,7 +341,7 @@
             <div class="nav-links">
                 <a href="#how">How it works</a>
                 <a href="#demo">Demo</a>
-                <button class="cta-button">Download App</button>
+                <span class="coming-soon-badge">Coming Soon</span>
             </div>
         </div>
     </nav>
@@ -364,23 +352,8 @@
             <h1>Watch <span class="accent">less</span>.<br>Learn <span class="accent">more</span>.</h1>
             <p>10 hours of YouTube → 30 minutes of insight. AI-powered video summaries for people who value their time.</p>
             <div class="hero-cta">
-                <button class="cta-button">Get Started Free</button>
+                <button class="cta-button" disabled>Coming Soon</button>
                 <a href="#how" class="secondary-button">See how it works</a>
-            </div>
-
-            <div class="stats">
-                <div class="stat">
-                    <span class="stat-number">10K+</span>
-                    <span class="stat-label">Hours Saved</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Active Users</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">15min</span>
-                    <span class="stat-label">Avg. Time Saved</span>
-                </div>
             </div>
         </div>
     </section>
@@ -422,22 +395,20 @@
             </div>
 
             <div class="demo-image">
-                [App Screenshot Here]
+                [App Screenshot Coming Soon]
             </div>
 
             <p style="color: #94A3B8; max-width: 600px; margin: 0 auto;">
-                "Bytesize cut my YouTube time from 2 hours to 20 minutes daily. 
-                I stay informed without the time sink."
+                Currently in development. Join the waitlist to be notified when we launch.
             </p>
-            <p style="color: #00D4FF; margin-top: 12px; font-weight: 600;">— Sarah Chen, Product Manager</p>
         </div>
     </section>
 
     <!-- Final CTA -->
     <section class="final-cta">
         <h2>Ready to reclaim your time?</h2>
-        <p>Start summarizing videos in seconds</p>
-        <button class="cta-button" style="font-size: 18px; padding: 16px 32px;">Download Bytesize</button>
+        <p>Be the first to know when we launch</p>
+        <button class="cta-button" disabled style="font-size: 18px; padding: 16px 32px;">Coming Soon</button>
     </section>
 
     <!-- Footer -->
